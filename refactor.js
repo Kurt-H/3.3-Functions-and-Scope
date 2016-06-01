@@ -87,7 +87,11 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+//answer c: z and then y:
+//"letter" is assigned the value "y" inside an
+//anonymous function, which is passed to setTimeout as an argument.
+//Being a function within a function expression, it is not hoisted, so the assignment
+//of "z" to "letter" occurs and is logged before being changed to "y".
 
 // -----------------------------------------------
 
