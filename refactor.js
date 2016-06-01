@@ -157,6 +157,14 @@ var spanishColor = function(colorName) {
 // Put your answer below -------------------------
 
 
+var spanishColor = {
+  rojo: "#ff0000",
+  blanco: "#ffffff",
+  azul: "#0000ff",
+  verde: "00ff00",
+  negro: "#000000"
+};
+
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -188,9 +196,17 @@ var foo = "bar";
 // to specify a number of times to call the given
 // function.
 
+/*
 var callTenTimes = function(callback) {
   var range = _.range(10);
   _.each(range, callback);
+};
+*/
+
+var callTenTimes = function(callback) {
+  for(var i=1; i<=10; i++){
+    callback();
+  }
 };
 
 // Put your answer below -------------------------
