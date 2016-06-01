@@ -211,6 +211,11 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+var callNTimes = function(callback) {
+  for(var i=1; i<=callback.length; i++){
+    callback();
+  }
+};
 
 
 // -----------------------------------------------
