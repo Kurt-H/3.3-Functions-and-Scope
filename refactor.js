@@ -312,6 +312,22 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+//Parameters of a function default to "undefined".
+//A mathematical operation using a value that is
+//not a number yields "NAN".
+
+var speed = 0;
+
+var accelerate = function(amount) {
+  if(!Number.isInteger(amount)){
+    //amount = amount;
+  //} else{
+    amount = 1;
+  }
+  speed += amount;
+  return speed;
+};
+console.log(accelerate(5));
 
 
 // -----------------------------------------------
