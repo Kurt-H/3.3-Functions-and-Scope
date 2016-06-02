@@ -211,7 +211,7 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
-var callTenTimes = function(callback) {
+var callNTimes = function(callback) {
   for(var i=1; i<=callback.length; i++){
     callback();
   }
@@ -244,8 +244,8 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
-(function(){
-  'use strict'
+var adjustScore = function(){
+
   var score = 0;
 
   var increaseScore = function() {
@@ -256,7 +256,7 @@ var decreaseScore = function() {
     score--;
   };
 
-}())
+};
 
 // -----------------------------------------------
 
@@ -276,13 +276,16 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
+var twoPlusTwo;
 var addNumbers = function(numberA, numberB) {
-  var sum = numberA + numberB;
-  console.log(sum);
+  var sum;
+  sum = numberA + numberB;
+  return sum;
 };
 
-var twoPlusTwo = addNumbers(2,2);
+twoPlusTwo = addNumbers(2,2);
 console.log(twoPlusTwo);
+
 
 
 // -----------------------------------------------
