@@ -155,16 +155,29 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
+var colorCheck = function(colorName){
+  var colorNameL;
+  var spanishColor;
+  var colorCode;
 
+  colorNameL = colorName.toLowerCase();
 
-var spanishColor = {
-  rojo: "#ff0000",
-  blanco: "#ffffff",
-  azul: "#0000ff",
-  verde: "00ff00",
-  negro: "#000000"
+  spanishColor = {
+    rojo: "#ff0000",
+    blanco: "#ffffff",
+    azul: "#0000ff",
+    verde: "00ff00",
+    negro: "#000000"
+  };
+
+  if (spanishColor.hasOwnProperty(colorNameL)){
+    colorCode = spanishColor.colorNameL;
+  }
+  return colorCode;
+
 };
-
+//console.log(colorCheck('rojo'));
+//Not Working: console displays 'undefined' for line 179.
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -320,14 +333,13 @@ var speed = 0;
 
 var accelerate = function(amount) {
   if(!Number.isInteger(amount)){
-    //amount = amount;
-  //} else{
     amount = 1;
   }
   speed += amount;
   return speed;
 };
-console.log(accelerate(5));
+//console.log(accelerate("dog"));
+//console.log(accelerate(5));
 
 
 // -----------------------------------------------
